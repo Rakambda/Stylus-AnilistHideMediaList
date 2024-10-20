@@ -9,16 +9,18 @@
 @supportURL		https://github.com/Rakambda/Stylus-AnilistHideMediaList/issues
 @updateURL		https://raw.githubusercontent.com/Rakambda/Stylus-AnilistHideMediaList/master/AnilistHideMediaList.user.css
 @preprocessor	stylus
-@var select		anime		"Hide animes" {
-	"Yes": ".media-preview-card:has(.cover[href^="/anime/"]) {display:none;}",
-	"No": ""
-}
-@var select		manga	"Hide mangas" {
-	"Yes": ".media-preview-card:has(.cover[href^="/manga/"]) {display:none;}",
-	"No": ""
-}
+@var checkbox hideAnimes "Hide animes" 1
+@var checkbox hideMangas "Hide mangas" 1
 ==/UserStyle== */
-
-/*[[anime]]*/
-
-/*[[manga]]*/
+@-moz-document domain("example.com") {
+	if hideAnimes {
+		.media-preview-card:has(.cover[href^="/anime/"]) {
+			display:none;
+		}
+	}
+	if hideMangas {
+		.media-preview-card:has(.cover[href^="/manga/"]) {
+			display:none;
+		}
+	}
+}
