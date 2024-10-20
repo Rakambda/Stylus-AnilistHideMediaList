@@ -8,7 +8,7 @@
 @homepageURL	https://github.com/Rakambda/Stylus-AnilistHideMediaList/
 @supportURL		https://github.com/Rakambda/Stylus-AnilistHideMediaList/issues
 @updateURL		https://raw.githubusercontent.com/Rakambda/Stylus-AnilistHideMediaList/master/AnilistHideMediaList.user.css
-@preprocessor	uso
+@preprocessor	stylus
 @var select		anime		"Hide animes" {
 	"Yes": ".media-preview-card:has(.cover[href^="/anime/"]) {display:none;}",
 	"No": ""
