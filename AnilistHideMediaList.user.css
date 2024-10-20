@@ -1,0 +1,24 @@
+/* ==UserStyle==
+@name			Anilist Hide Media List
+@namespace		rakambda
+@version		1.0.0
+@description	A theme to disable media list previews on Anilist homepage
+@author			rakambda
+@license		CC-BY-SA-4.0
+@homepageURL	https://github.com/Rakambda/Stylus-AnilistHideMediaList/
+@supportURL		https://github.com/Rakambda/Stylus-AnilistHideMediaList/issues
+@updateURL		https://raw.githubusercontent.com/Rakambda/Stylus-AnilistHideMediaList/master/AnilistHideMediaList.user.css
+@preprocessor	uso
+@var select		anime		"Hide animes" {
+	"Yes": ".media-preview-card:has(.cover[href^="/anime/"]) {display:none;}",
+	"No": ""
+}
+@var select		manga	"Hide mangas" {
+	"Yes": ".media-preview-card:has(.cover[href^="/manga/"]) {display:none;}",
+	"No": ""
+}
+==/UserStyle== */
+
+/*[[anime]]*/
+
+/*[[manga]]*/
