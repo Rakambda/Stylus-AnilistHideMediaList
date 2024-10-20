@@ -12,7 +12,7 @@
 @var checkbox hideAnimes "Hide animes" 1
 @var checkbox hideMangas "Hide mangas" 1
 ==/UserStyle== */
-@-moz-document domain("example.com") {
+@-moz-document url("https://anilist.co/home") {
 	if hideAnimes {
 		.media-preview-card:has(.cover[href^="/anime/"]) {
 			display:none;
